@@ -1,0 +1,47 @@
+# Importing libraries for model architecture and optimization
+from google.colab import drive
+drive.mount('/content/drive')
+from keras.models import Sequential
+from keras.optimizers import Adam
+
+# Importing TensorFlow Hub for transfer learning
+import tensorflow_hub as hub
+
+# Importing Keras Tuner for hyperparameter tuning
+import keras_tuner as kt
+
+# Importing libraries for data manipulation and analysis
+import numpy as np
+import pandas as pd
+
+# Importing TensorFlow and Keras layers for machine learning and deep learning
+import tensorflow as tf
+from keras.layers import GlobalMaxPooling2D, GlobalAveragePooling2D, Dense, Flatten, Dropout
+from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
+from keras import Sequential
+from keras.metrics import mean_absolute_error
+from keras.preprocessing.image import ImageDataGenerator
+from keras.applications.xception import preprocess_input, Xception
+from keras.applications import MobileNet, InceptionV3
+
+# Importing libraries for date and time manipulation
+import datetime
+
+# Importing libraries for file and directory operations
+import os
+
+# Importing libraries for mathematical operations
+import math
+
+# Importing libraries for data visualization
+from matplotlib import pyplot as plt
+import seaborn as sns
+import matplotlib.image as mpimg
+
+# Importing library for machine learning model evaluation
+from sklearn.model_selection import train_test_split
+
+# Set GPU memory growth
+gpus = tf.config.list_physical_devices('GPU')
+for gpu in gpus:
+    tf.config.experimental.set_memory_growth(gpu, True)
